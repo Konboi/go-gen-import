@@ -149,13 +149,13 @@ func PkgImport(file string, conf *Config, info *ImportInfo) error {
 		}
 	}
 
-	f, err := os.Create("./main.go")
+	f, err := os.Create(file)
 	if err != nil {
 		return err
 	}
 	defer f.Close()
-	w := bufio.NewWriter(f)
 
+	w := bufio.NewWriter(f)
 	for _, line := range outputLines {
 		fmt.Fprintln(w, line)
 	}
