@@ -57,4 +57,5 @@ func main() {
 
 # TODO
 
-- input/ouput
+- input/ouput file
+- update import area parser
