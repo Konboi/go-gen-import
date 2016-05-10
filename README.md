@@ -54,6 +54,16 @@ func main() {
 }
 ```
 
+### output
+
+```
+$ go generate
+main.go
+$ go run main.go
+this is sample
+2016/05/10 18:22:58 this is sample by log
+```
+
 
 # TODO
 
